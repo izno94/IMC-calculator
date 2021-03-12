@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    background-color: burlywood;
+    justify-content: center;
+}
+button{
+    border: 1px, red, solid;
+    border-radius: 25px ;
+}
