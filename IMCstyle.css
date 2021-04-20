@@ -1,27 +1,43 @@
 body {
-    display: grid;
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    justify-content: center;
-    background-color: #E7E7E7;
+    align-items: center;
+    background: linear-gradient(-55deg, #f2d0a4, #870058, #a4303f);
+    background-size: 300%;
+    background-repeat: unset;
+    animation: test 180s linear 0s infinite alternate;
+}
+
+@keyframes test {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+input {
+    margin: 15px;
 }
 
 button {
-    border: 1px red solid;
+    margin: 25px;
+    border: 1px white solid;
     border-radius: 25px;
     font-style: italic;
     font-weight: bold;
     color: #E7E7E7;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+34,8f0222+49,6d0019+99 */
     background: #a90329;
-    /* Old browsers */
-    background: -moz-linear-gradient(left, #a90329 34%, #8f0222 49%, #6d0019 99%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #a90329 34%, #8f0222 49%, #6d0019 99%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #a90329 34%, #8f0222 49%, #6d0019 99%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a90329', endColorstr='#6d0019', GradientType=1);
-    /* IE6-9 */
+
 
 }
 
@@ -31,4 +47,40 @@ button {
     border: 1px green solid;
     border-radius: 15px;
     box-shadow: 10px 10px 5px 0px #656565;
+    box-shadow: 0px 5px 10px 10px #656565;
+}
+
+#show {
+    width: 250px;
+}
+
+.underWeight {
+    background-color: red;
+    font-size: 21px;
+}
+
+.optimal {
+
+    background-color: green;
+    font-size: 21px;
+}
+
+.overweight {
+    background-color: orange;
+    font-size: 21px;
+}
+
+.modérée {
+    background-color: yellow;
+    font-size: 21px;
+}
+
+.danger {
+    background-color: orangered;
+    font-size: 21px;
+}
+
+.morbide {
+    background-color: red;
+    font-size: 21px;
 }
